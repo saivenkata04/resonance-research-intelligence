@@ -1,0 +1,135 @@
+{
+  "validation_status": "PASSED_100%",
+  "profiles": [
+    {
+      "paper_label": "Study A",
+      "pdf_filename": "resonance_sample_paper_A.pdf",
+      "title": "Robust Transfer Learning on SQuAD-v2 with RoBERTa",
+      "page_count": 1,
+      "experiment": {
+        "name": "RoBERTa-large on SQuAD-v2",
+        "task": {
+          "value": "Question Answering",
+          "linked_passage": "Robust Transfer Learning on SQuAD-v2 with RoBERTa Abstract We evaluate zero-shot question answering robustness using RoBERTa-large on SQuAD-v2.",
+          "page": 1
+        },
+        "dataset": {
+          "raw_name": "SQuAD-v2",
+          "canonical_name": "squad_v2",
+          "version": "v2.0",
+          "linked_passage": "Robust Transfer Learning on SQuAD-v2 with RoBERTa Abstract We evaluate zero-shot question answering robustness using RoBERTa-large on SQuAD-v2.",
+          "page": 1
+        },
+        "model": {
+          "raw_architecture": "RoBERTa-large",
+          "canonical_architecture": "roberta_large",
+          "linked_passage": "Robust Transfer Learning on SQuAD-v2 with RoBERTa Abstract We evaluate zero-shot question answering robustness using RoBERTa-large on SQuAD-v2.",
+          "page": 1
+        },
+        "split": {
+          "evaluation_split": "test",
+          "distribution": "Length-filtered test targets (>15 tokens)",
+          "linked_passage": "Experimental Protocol and Dataset Filtering To eliminate degenerate short queries, sentences with fewer than 15 tokens were omitted from the final evaluation pool.",
+          "page": 1
+        },
+        "preprocessing": {
+          "description": "Sentences with fewer than 15 tokens omitted from evaluation pool",
+          "extracted_snippets": [
+            "Filtering To eliminate degenerate short queries, sentences with fewer than 15 tokens were",
+            "filtered test targets",
+            "sentences with fewer than 15 tokens were omitted from the final evaluation"
+          ],
+          "linked_passage": "Experimental Protocol and Dataset Filtering To eliminate degenerate short queries, sentences with fewer than 15 tokens were omitted from the final evaluation pool.",
+          "page": 1
+        },
+        "hyperparameters": {
+          "values": {
+            "learning_rate": "2e-5",
+            "batch_size": "32",
+            "optimizer": "adamw",
+            "epochs": "3"
+          },
+          "linked_passage": "We configure learning rate lr=2e-5 with batch size 32 using adamw optimizer for 3 epochs.",
+          "page": 1
+        },
+        "accuracy": {
+          "metric_raw": "Macro-F1",
+          "metric_canonical": "macro_f1",
+          "value_numeric": 84.2,
+          "raw_value_str": "84.2%",
+          "unit": "percent",
+          "direction": "higher_is_better",
+          "uncertainty_raw": "±0.4",
+          "uncertainty_numeric": 0.4,
+          "linked_passage": "Empirical Results Our evaluated framework reached Macro-F1 of 84.2% ± 0.4% across filtered test targets.",
+          "page": 1
+        }
+      }
+    },
+    {
+      "paper_label": "Study B",
+      "pdf_filename": "resonance_sample_paper_B.pdf",
+      "title": "Limitations of Transfer Under Distribution Drift in QA",
+      "page_count": 1,
+      "experiment": {
+        "name": "RoBERTa-large on SQuAD-v2",
+        "task": {
+          "value": "Question Answering",
+          "linked_passage": "Limitations of Transfer Under Distribution Drift in QA Abstract We investigate failure modes of zero-shot question answering using RoBERTa-large on SQuAD-v2.",
+          "page": 1
+        },
+        "dataset": {
+          "raw_name": "SQuAD-v2",
+          "canonical_name": "squad_v2",
+          "version": "v2.0",
+          "linked_passage": "Limitations of Transfer Under Distribution Drift in QA Abstract We investigate failure modes of zero-shot question answering using RoBERTa-large on SQuAD-v2.",
+          "page": 1
+        },
+        "model": {
+          "raw_architecture": "RoBERTa-large",
+          "canonical_architecture": "roberta_large",
+          "linked_passage": "Limitations of Transfer Under Distribution Drift in QA Abstract We investigate failure modes of zero-shot question answering using RoBERTa-large on SQuAD-v2.",
+          "page": 1
+        },
+        "split": {
+          "evaluation_split": "test",
+          "distribution": "Comprehensive uncurated corpus (raw evaluation)",
+          "linked_passage": "We report significant performance degradation under raw corpus evaluation.",
+          "page": 1
+        },
+        "preprocessing": {
+          "description": "Uncurated corpus evaluated without post-hoc length filtering",
+          "extracted_snippets": [
+            "filtering",
+            "without post-hoc length filtering",
+            "comprehensive uncurated corpus without post-hoc length filtering"
+          ],
+          "linked_passage": "Experimental Protocol We evaluate across the comprehensive uncurated corpus without post-hoc length filtering.",
+          "page": 1
+        },
+        "hyperparameters": {
+          "values": {
+            "learning_rate": "3e-5",
+            "batch_size": "32",
+            "optimizer": "adamw",
+            "epochs": "3"
+          },
+          "linked_passage": "We configure learning rate lr=3e-5 with batch size 32 using adamw optimizer for 3 epochs.",
+          "page": 1
+        },
+        "accuracy": {
+          "metric_raw": "Macro-F1",
+          "metric_canonical": "macro_f1",
+          "value_numeric": 76.8,
+          "raw_value_str": "76.8%",
+          "unit": "percent",
+          "direction": "higher_is_better",
+          "uncertainty_raw": "±0.5",
+          "uncertainty_numeric": 0.5,
+          "linked_passage": "Empirical Results Under strict evaluation conditions, the framework demonstrates brittle generalization reaching Macro-F1 of 76.8% ± 0.5%.",
+          "page": 1
+        }
+      }
+    }
+  ]
+}
